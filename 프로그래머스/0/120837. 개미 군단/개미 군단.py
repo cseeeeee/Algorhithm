@@ -1,11 +1,10 @@
 def solution(hp):
     cnt=0
-    #장군개미
-    cnt += hp //5
-    hp %= 5
-    #병정개미
-    cnt += hp//3
-    hp %= 3
-    #일개미
-    cnt += hp
+    if hp//4>0:
+        cnt+=1
+    elif hp//2>0:
+        cnt+=1
+    elif hp//1>0:
+        cnt+=1
     return cnt
+        
